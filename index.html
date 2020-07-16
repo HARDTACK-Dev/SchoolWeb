@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부여 연꽃 축제</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script  language="Javascript">
+        
+        var goodURL  = "#"  //이곳에 인증이 되었을때 이동할 페이지  입력
+            alert("비밀번호는 '응용 프로그래밍' 입니다!")
+        
+        var password =  prompt("비밀번호 입력","")
+        
+            if (password == null)  {
+                alert("출입금지")
+                location  = "http://www.naver.com"         // 실패시 이동 주소       history.back();를 넣어도 됨
+            }
+            else  {
+                var  combo =  password
+                var  total =  combo.toLowerCase()
+        
+            if  (total == "응용프로그래밍" || "응용 프로그래밍")  {                // 비밀번호
+                alert("안녕하세요 선생님!")
+                location  =  goodURL
+            }
+            else  {
+                alert("출입금지")
+                location  = "srccode.html"    // 실패시 이동 주소      history.back();를 넣어도 됨
+            }
+        }
+        
+        </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <img src="images/logo1.gif" alt="부여 연꽃 축제">
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">축제소개</a></li>
+                    <li><a href="#">행사안내</a></li>
+                    <li><a href="#">홍보안내</a></li>
+                    <li><a href="#">참여마당</a></li>
+                </ul>
+
+                <!-- 슬라이드 -->
+                <ul class="slide">
+                    <img src="images/s1.jpg" alt="슬라이드">
+                </ul>
+                
+
+            </nav>
+        </header>
+
+        <section>
+                
+
+                <div class="content">
+                    <!-- 공지사항 -->
+                   
+                    <ul class="notice">
+                        <h3>공지사항</h3>
+                        <div class="bd">
+                        <li><a href="#" title="2020.05.10"> <small>서동요 전국창작동요 부르기안내 </small></a></li>
+                        <li><a href="#" title="2020.4.20"> <small> 천화일화 연꽃 판타지쇼를 즐기자</small></a></li>
+                        <li><a href="#" title=" 2020.04.10"> <small> 서동연꽃축제  아이디어 공모 </small></a></li>
+                        <li><a href="#" title="2020.03.21"> <small> 서동연꽃축제 푸드트럭 영업자 공고   </small></a></li>
+                        <li><a href="#" title="2020.03.05"> <small> 서동연꽃축제 포스터 공모  </small></a></li>
+                        </div>
+                    </ul>
+
+                    <!-- 갤러리 -->
+                    
+                    <ul class="gal">
+                        <h3>갤러리</h3>
+                        <div class="bd">
+                        <li><a href="#"><img src="images/g1.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/g2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="images/g3.jpg" alt=""></a></li>
+                        </div>
+                    </ul>
+
+                    <!-- 바로가기 -->
+                    
+                    <ul class="baro">
+                        <h3>바로가기</h3>
+                        <div class="bd">
+                        <li><a class="b1" href="#">오시는길 </a></li>
+                        <li><a class="2" href="#">행사일정</a></li>
+                        <li><a class="3" href="#">배치도</a></li>
+                    </div>
+                    </ul>
+                </div>
+
+                <footer>
+                    <!-- 푸터로고 -->
+                    <div class="footer_logo">
+                        <img src="images/logo2.gif" alt="">
+                    </div>
+
+                    <!-- 저작자 표시 -->
+                    <div class="copyright">
+                        <small>
+                        <li>Tel : 041.830.2211~2212  고유번호 : 199-80-00302 </li>
+                        <li>주소 : 충남 부여군 부여읍 사비로 41. 부여군민회관(1층) 문화축제추진단 </li>
+                        <li>Copyright by 2003~2017 Buyeo Seodong Lotus Festival. All right Reserved.</li>
+                        </small>
+                    </div>
+
+                    <!-- 패밀리 사이트 -->
+                    <div class="family_site">
+                        <a href="#">충청남도부여군</a><br>
+                        <a href="#">한국관광공사</a><br>
+                        <a href="#">문화체육관광부</a><br>
+                        <a href="#">한국지역진흥재단</a><br>
+                    </div>
+                </footer>
+        </section>
+    </div>
+</body>
+</html>
